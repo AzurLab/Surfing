@@ -1,0 +1,66 @@
+# 本地网络&直连
+D,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/Local.list
+D,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/Unbreak.list
+;D,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Unbreak.list
+;D,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/GoogleCN.list
+
+# Telegram (没有什么比吹水更重要)
+G,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/Telegram.list
+
+# 自定义广告拦截
+R,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/abp.list
+R,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/fuckapp.list
+
+# 自定义直连 (免疫普通广告拦截)
+D,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/direct.list
+
+# 自定义代理 (免疫普通广告拦截)
+T,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/proxy.list
+
+# 
+R,https://cdn.jsdelivr.net/gh/privacy-protection-tools/anti-AD@master/anti-ad-surge.txt
+
+;R,https://anti-ad.net/surge.txt
+
+;R,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/ad-wars.list
+;R,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/neohosts.list
+
+;R,https://cdn.jsdelivr.net/gh/NobyDa/Script@master/Surge/AdRule.list
+;R,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Guard/Advertising.list
+;R,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Guard/Hijacking.list
+;R,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Guard/Privacy.list
+
+# 公司
+
+M,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/Microsoft.list
+P,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/PayPal.list
+
+;A,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/Apple/Apple.list
+
+# 影音娱乐
+;N,https://github.com/DivineEngine/Profiles/blob/master/Surge/Ruleset/StreamingMedia/Video/Netflix.list
+V,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list
+
+C,https://cdn.jsdelivr.net/gh/Dashboard2/scc@master/rules/MediaSE.list
+
+;C,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/StreamingSE.list
+;C,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Bilibili.list
+;C,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/iQiyi.list
+;C,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Letv.list
+;C,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/MOO.list
+;C,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Tencent%20Video.list
+;C,https://cdn.jsdelivr.net/gh/lhie1/Rules@master/Surge/Surge%203/Provider/Media/Youku.list
+
+# 中国流媒体
+;MediaCN,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/StreamingCN.list
+
+# 
+T,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list
+
+# 
+D,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list
+D,https://cdn.jsdelivr.net/gh/NobyDa/Script@master/Surge/Download.list
+D,[]GEOIP,CN
+
+# 
+O,[]MATCH
