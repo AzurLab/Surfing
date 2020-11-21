@@ -10,6 +10,7 @@ M,https://cdn.jsdelivr.net/gh/AzurLab/Surfing-Rules@main/Surge/Microsoft.list
 P,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Extra/PayPal.list
 V,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/StreamingMedia/Streaming.list
 C,https://cdn.jsdelivr.net/gh/AzurLab/Surfing-Rules@main/Surge/MediaExport.list
+N,https://cdn.jsdelivr.net/gh/AzurLab/Surfing-Rules@main/Surge/NeteaseMusic.list
 T,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/Global.list
 D,https://cdn.jsdelivr.net/gh/DivineEngine/Profiles@master/Surge/Ruleset/China.list
 D,https://cdn.jsdelivr.net/gh/NobyDa/Script@master/Surge/Download.list
