@@ -4,7 +4,7 @@
 (?i:HK|Hong.*?Kong|HGC|WTT|CMI|[^-]港),🇭🇰
 (MO|Macao|澳门|CTM),🇲🇴
 (?i:TW|Taiwan|新北|彰化|CHT|台湾|[^-]台|HINET),🇹🇼
-(?i:US|America|United.*?States|美国|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥),🇺🇸
+(America|United.*?States|美国|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥),🇺🇸
 (?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日),🇯🇵
 (?i:SG|Singapore|新加坡|狮城|[^-]新),🇸🇬
 (?i:UK|England|United.*?Kingdom|London|英国|[^-]英|伦敦),🇬🇧
@@ -275,7 +275,8 @@
 (UG|Uganda|乌干达|烏干達),🇺🇬
 (UM|U.S. Outlying|美国?本土外小岛?屿|美國本土外小島嶼|美国离岛),🇺🇲
 (UN|United Nations|联合国?|聯合國),🇺🇳
-(US|United States|美国?|美國),🇺🇸
+;(US|United States|美国?|美國),🇺🇸
+(United States|美国?|美國),🇺🇸
 (UY|Uruguay|乌拉圭|烏拉圭),🇺🇾
 (UZ|Uzbekistan|乌兹别克斯坦|烏茲別克),🇺🇿
 (VA|Vatican City|梵蒂冈|梵蒂岡),🇻🇦
@@ -299,4 +300,5 @@
 ;
 ;
 (CN|China|中国?|中國),🇨🇳
+?i:US,🇺🇸
 .*,🌎
