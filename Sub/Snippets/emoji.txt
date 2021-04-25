@@ -1,5 +1,5 @@
 (?i:流量|时间|应急|过期|Bandwidth|expire),🏳️‍🌈
-(Netease|Music|Unblock|网易云),🎶
+(Netease|Music|Unblock|网易云),🎵
 ;
 (?i:HK|Hong.*?Kong|HGC|WTT|CMI|[^-]港),🇭🇰
 (MO|Macao|澳门|CTM),🇲🇴
