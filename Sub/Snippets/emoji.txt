@@ -1,51 +1,35 @@
 (?i:流量|时间|应急|过期|Bandwidth|expire),🏳️‍🌈
 (Netease|Music|Unblock|网易云),🎶
-(?i:HK|Hong.*?Kong|HKT|HKBN|HGC|WTT|CMI|[^-]港),🇭🇰
-(?i:TW|Taiwan|新北|彰化|CHT|台湾|[^-]台|HINET),🇹🇼
-(?i:US|America|United.*?States|美国|美國|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥),🇺🇸
-(?i:UK|England|United.*?Kingdom|英国|[^-]英|伦敦),🇬🇧
-(JP|Japan|日本|东京|大阪|埼玉|[^-]日),🇯🇵
-(SG|Singapore|新加坡|狮城|[^-]新),🇸🇬
-(KR|Korea|KOR|首尔|韩|韓),🇰🇷
+;
+(?i:HK|Hong.*?Kong|HGC|WTT|CMI|[^-]港),🇭🇰
 (MO|Macao|澳门|CTM),🇲🇴
-
-AC,🇦🇨
-(AR(?!K)|阿根廷),🇦🇷
-(奥地利|维也纳),🇦🇹
-(AU|Australia|Sydney|澳大利亚|悉尼),🇦🇺
-BE,🇧🇪
-(BR|Brazil|巴西|圣保罗),🇧🇷
-(CA|Canada|加拿大|蒙特利尔|温哥华|楓葉|枫叶),🇨🇦
-(瑞士|苏黎世),🇨🇭
-(DE|Germany|法兰克福|德),🇩🇪
-丹麦,🇩🇰
-;ES,🇪🇸
-EU,🇪🇺
-(Finland|芬兰|赫尔辛基),🇫🇮
-(FR|France|法国|巴黎),🇫🇷
-(Indonesia|印尼|印度尼西亚|雅加达),🇮🇩
-(Ireland|爱尔兰|都柏林),🇮🇪
-(IN|India|印度|孟买),🇮🇳
-(IT|Italy|意大利|米兰),🇮🇹
-
-(KP|朝鲜),🇰🇵
-
-(MY|Malaysia|马来西亚),🇲🇾
-(NL|Netherlands|荷兰|阿姆斯特丹),🇳🇱
-(PH|Philippines|菲律宾),🇵🇭
-(RO|罗马尼亚),🇷🇴
-(RU|Russia|伯力|莫斯科|圣彼得堡|西伯利亚|新西伯利亚|哈巴罗夫斯克|俄罗斯|[^-]俄),🇷🇺
-(沙特|迪拜),🇸🇦
-(SE|Sweden),🇸🇪
-
-(TH|Thailand|泰国|曼谷),🇹🇭
-(TR|Turkey|土耳其|伊斯坦布尔),🇹🇷
-(VN|越南),🇻🇳
-(ZA|南非),🇿🇦
-(PL|波兰),🇵🇱
-(?i:CN|China|回国|中国|江苏|北京|上海|广州|深圳|杭州|常州|徐州|青岛|宁波|镇江|成都|back),🇨🇳
-(?i:free),🎏
-
+(?i:TW|Taiwan|新北|彰化|CHT|台湾|[^-]台|HINET),🇹🇼
+(?i:US|America|United.*?States|美国|[^-]美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥),🇺🇸
+(?i:JP|Japan|Tokyo|Osaka|Saitama|日本|东京|大阪|埼玉|[^-]日),🇯🇵
+(?i:SG|Singapore|新加坡|狮城|[^-]新),🇸🇬
+(?i:UK|England|United.*?Kingdom|London|英国|[^-]英|伦敦),🇬🇧
+(?i:KR|Korea|KOR|首尔|韩|韓),🇰🇷
+(North.*?Korea|朝鲜),🇰🇵
+;
+(Austria|Vienna|奥地利|维也纳),🇦🇹
+(Australia|Sydney|澳大利亚|澳洲|悉尼),🇦🇺
+(Brazil|Paulo|巴西|圣保罗),🇧🇷
+(Canada|Montreal|Vancouver|加拿大|蒙特利尔|温哥华|楓葉|枫叶),🇨🇦
+(Switzerland|Zurich|瑞士|苏黎世),🇨🇭
+(Germany|法兰克福|德),🇩🇪
+(Finland|Helsinki|芬兰|赫尔辛基),🇫🇮
+(France|Paris|法国|巴黎),🇫🇷
+(Indonesia|Jakarta|印尼|印度尼西亚|雅加达),🇮🇩
+(Ireland|Dublin|爱尔兰|都柏林),🇮🇪
+(India|Mumbai|印度|孟买),🇮🇳
+(Italy|Milan|意大利|米兰),🇮🇹
+(Netherlands|荷兰|阿姆斯特丹),🇳🇱
+(Dubai|阿联酋|迪拜),🇦🇪
+(Thailand|泰国|曼谷),🇹🇭
+(Turkey|土耳其|伊斯坦布尔),🇹🇷
+;
+(?i:CN|China|回国|江苏|北京|上海|广州|深圳|杭州|常州|徐州|青岛|宁波|镇江|成都|back),🇨🇳
+;
 (AC|Ascension( Island)?|阿森松岛?),🇦🇨
 (AD|Andorra|安道尔|安道爾),🇦🇩
 (AE|United Arab Emirates|阿拉伯联合酋长国?|阿拉伯聯合大公國|阿联酋),🇦🇪
@@ -56,7 +40,7 @@ EU,🇪🇺
 (AM|Armenia|亚美尼亚|亞美尼亞),🇦🇲
 (AO|Angola|安哥拉),🇦🇴
 (AQ|Antarctica|南极|南極),🇦🇶
-(AR|Argentina|阿根廷),🇦🇷
+(AR(?!K)|Argentina|阿根廷),🇦🇷
 (AS|American Samoa|美属萨摩亚|美屬薩摩亞),🇦🇸
 (AT|Austria|奥地利|奧地利),🇦🇹
 (AU|Australia|澳大利亚|澳洲),🇦🇺
@@ -86,15 +70,15 @@ EU,🇪🇺
 (BZ|Belize|伯利兹|貝里斯),🇧🇿
 (CA|Canada|加拿大),🇨🇦
 (CC|Cocos|Keeling|科科斯（基林）群?岛?|科科斯|基林|科克斯|基靈),🇨🇨
-(CD|Congo - Kinshasa|刚果（金）|剛果（金夏沙）),🇨🇩
+(CD|Congo( - Kinshasa)?|刚果（?金?）?|剛果),🇨🇩
 (CF|Central African Republic|中非),🇨🇫
 (CG|Congo - Brazzaville|刚果（布）|剛果（布拉薩）),🇨🇬
-(CH|Switzerland|瑞士),🇨🇭
+(CH|Switzerland|瑞士|苏黎世),🇨🇭
 (CI|C[ôo]te d’?Ivoire|科特迪瓦|象牙海岸),🇨🇮
 (CK|Cook|库克群?岛?|庫克群島),🇨🇰
 (CL|Chile|智利),🇨🇱
 (CM|Cameroon|喀麦隆|喀麥隆),🇨🇲
-(CN|China|中国?|中國),🇨🇳
+;(CN|China|中国?|中國),🇨🇳
 (CO|Colombia|哥伦比亚|哥倫比亞),🇨🇴
 (CP|Clipperton Island|克利珀顿岛?|克里派頓島),🇨🇵
 (CR|Costa Rica|哥斯达黎加|哥斯大黎加),🇨🇷
@@ -308,5 +292,7 @@ EU,🇪🇺
 (England|英格兰|英格蘭),🏴󠁧󠁢󠁥󠁮󠁧󠁿
 (Scotland|苏格兰|蘇格蘭),🏴󠁧󠁢󠁳󠁣󠁴󠁿
 (Wales|威尔士|威爾斯),🏴󠁧󠁢󠁷󠁬󠁳󠁿
-
+;
+;
+(CN|China|中国?|中國),🇨🇳
 .*,🌎
