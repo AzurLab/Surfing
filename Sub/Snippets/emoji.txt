@@ -78,7 +78,8 @@
 (CI|C[ôo]te d’?Ivoire|科特迪瓦|象牙海岸),🇨🇮
 (CK|Cook|库克群?岛?|庫克群島),🇨🇰
 (CL|Chile|智利),🇨🇱
-(CM|Cameroon|喀麦隆|喀麥隆),🇨🇲
+;(CM|Cameroon|喀麦隆|喀麥隆),🇨🇲
+(Cameroon|喀麦隆|喀麥隆),🇨🇲
 ;(CN|China|中国?|中國),🇨🇳
 (CO|Colombia|哥伦比亚|哥倫比亞),🇨🇴
 (CP|Clipperton Island|克利珀顿岛?|克里派頓島),🇨🇵
@@ -200,7 +201,8 @@
 (NA|Namibia|纳米比亚|納米比亞),🇳🇦
 (NC|New Caledonia|新喀里多尼亚|新喀里多尼亞),🇳🇨
 (NE|Niger|尼日尔|尼日),🇳🇪
-(NF|Norfolk Island|诺福克岛?|諾福克島),🇳🇫
+;(NF|Norfolk Island|诺福克岛?|諾福克島),🇳🇫
+(Norfolk Island|诺福克岛?|諾福克島),🇳🇫
 (NG|Nigeria|尼日利亚|奈及利亞),🇳🇬
 (NI|Nicaragua|尼加拉瓜),🇳🇮
 (NL|Netherlands|荷兰|荷蘭),🇳🇱
@@ -245,7 +247,8 @@
 (SN|Senegal|塞内加尔|塞內加爾),🇸🇳
 (SO|Somalia|索马里|索馬利亞),🇸🇴
 (SR|Suriname|苏里南|蘇利南),🇸🇷
-(SS|South Sudan|南苏丹|南蘇丹),🇸🇸
+;(SS|South Sudan|南苏丹|南蘇丹),🇸🇸
+(South Sudan|南苏丹|南蘇丹),🇸🇸
 (ST|São Tomé & Príncipe|圣多美|普林西比|聖多美普林西比),🇸🇹
 (SV|El Salvador|萨尔瓦多|薩爾瓦多),🇸🇻
 (SX|Sint Maarten|荷属圣马丁|荷屬聖馬丁),🇸🇽
