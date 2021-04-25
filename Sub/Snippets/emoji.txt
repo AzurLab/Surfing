@@ -87,7 +87,7 @@ EU,🇪🇺
 (CA|Canada|加拿大),🇨🇦
 (CC|Cocos|Keeling|科科斯（基林）群?岛?|科科斯|基林|科克斯|基靈),🇨🇨
 (CD|Congo - Kinshasa|刚果（金）|剛果（金夏沙）),🇨🇩
-(CF|Central African Republic|中非共和国?|中非共和國|中非),🇨🇫
+(CF|Central African Republic|中非),🇨🇫
 (CG|Congo - Brazzaville|刚果（布）|剛果（布拉薩）),🇨🇬
 (CH|Switzerland|瑞士),🇨🇭
 (CI|C[ôo]te d’?Ivoire|科特迪瓦|象牙海岸),🇨🇮
@@ -110,7 +110,7 @@ EU,🇪🇺
 (DJ|Djibouti|吉布提|吉布地),🇩🇯
 (DK|Denmark|丹麦|丹麥),🇩🇰
 (DM|Dominica|多米尼克),🇩🇲
-(DO|Dominican Republic|多米尼加共|国?|多明尼加共和國),🇩🇴
+(DO|Dominican Republic|多米尼加|多明尼加),🇩🇴
 (DZ|Algeria|阿尔及利亚|阿爾及利亞),🇩🇿
 (EA|Ceuta & Melilla|休达及梅利利亚|休達與梅利利亞),🇪🇦
 (EC|Ecuador|厄瓜多尔|厄瓜多),🇪🇨
@@ -308,3 +308,5 @@ EU,🇪🇺
 (England|英格兰|英格蘭),🏴󠁧󠁢󠁥󠁮󠁧󠁿
 (Scotland|苏格兰|蘇格蘭),🏴󠁧󠁢󠁳󠁣󠁴󠁿
 (Wales|威尔士|威爾斯),🏴󠁧󠁢󠁷󠁬󠁳󠁿
+
+.*,🟢
