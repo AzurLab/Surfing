@@ -7,6 +7,7 @@ DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,mi.com
 
 # > Microsoft Authenticator
+DOMAIN-SUFFIX,activity.windows.com
 DOMAIN-SUFFIX,in.appcenter.ms
 DOMAIN-SUFFIX,mobile.pipe.aria.microsoft.com
 DOMAIN-SUFFIX,browser.pipe.aria.microsoft.com
