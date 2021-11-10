@@ -9,11 +9,14 @@ DOMAIN-SUFFIX,qy.net
 IP-CIDR,101.227.0.0/16
 IP-CIDR,101.224.0.0/13
 IP-CIDR,119.176.0.0/12
+IP-CIDR,116.211.202.206/32,no-resolve
+IP-CIDR,116.211.202.216/32,no-resolve
 
 # > Bilibili
 USER-AGENT,bili*
 USER-AGENT,Bilibili*
 DOMAIN-KEYWORD,bilibili
+DOMAIN-KEYWORD,cn-hk-eq-bcache-
 DOMAIN-SUFFIX,acg.tv
 DOMAIN-SUFFIX,acgvideo.com
 DOMAIN-SUFFIX,b23.tv
@@ -26,7 +29,7 @@ DOMAIN-SUFFIX,bilivideo.com
 DOMAIN-SUFFIX,hdslb.com
 DOMAIN-SUFFIX,im9.com
 DOMAIN-SUFFIX,smtcdns.net
-DOMAIN-SUFFIX,upos-hz-mirrorakam.akamaized.net
+DOMAIN,upos-hz-mirrorakam.akamaized.net
 IP-CIDR,119.29.29.29/32
 IP-CIDR,150.116.92.250/32
 IP-CIDR,203.107.1.34/32
