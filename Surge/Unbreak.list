@@ -78,7 +78,11 @@ DOMAIN-SUFFIX,update.googleapis.com
 DOMAIN-SUFFIX,www-googletagmanager.l.google.com
 DOMAIN-SUFFIX,www.gstatic.com
 
+# > Paramount+
+DOMAIN,pubads.g.doubleclick.net
+
 # > Tencent
+DOMAIN,fairplay.l.qq.com
 DOMAIN,livew.l.qq.com
 DOMAIN,vd.l.qq.com
 
