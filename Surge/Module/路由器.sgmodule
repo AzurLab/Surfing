@@ -1,0 +1,11 @@
+#!name=路由器.com
+#!desc=router.com 中文版
+
+[General]
+force-http-engine-hosts=%APPEND% lyq.com, www.lyq.com, router.com, www.router.com, xn--m7r592e54q.com, www.xn--m7r592e54q.com
+
+[MITM]
+hostname = %INSERT% lyq.com, www.lyq.com, router.com, www.router.com, xn--m7r592e54q.com, www.xn--m7r592e54q.com
+
+[URL Rewrite]
+^https?://(|www\.)(lyq|router|xn--m7r592e54q)\.com http://{{{GATEWAY_ADDRESS}}} 302
