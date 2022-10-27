@@ -1,3 +1,6 @@
+# > 谷歌翻译
+DOMAIN-SUFFIX,translate.googleapis.com
+
 # > OP.GG
 # DOMAIN-SUFFIX,op.gg
 # DOMAIN-SUFFIX,opgg-static.akamaized.net
@@ -7,4 +10,3 @@
 
 # > Epic
 # DOMAIN-SUFFIX,epicgames.com
-
