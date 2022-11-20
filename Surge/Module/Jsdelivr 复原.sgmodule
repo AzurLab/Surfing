@@ -1,0 +1,8 @@
+#!name=Jsdelivr 复原
+#!desc=将Jsdelivr CDN站点复原为官方raw站点
+
+[MITM]
+hostname = %INSERT% cdn.jsdelivr.net
+
+[URL Rewrite]
+^https?:\/\/cdn\.jsdelivr\.net\/gh\/([^@]+)@(.*) https://raw.githubusercontent.com/$1/$2 302
