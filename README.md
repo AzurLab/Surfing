@@ -1,5 +1,7 @@
 # Surfing Rules 你也网上冲浪啊
 
+[![Telegram](https://img.shields.io/badge/discuss-Telegram-2EA9DF?style=flat-square)](https://t.me/blowH2O)
+
 ## Thanks
 
 - [DivineEngine / Profiles](https://github.com/DivineEngine/Profiles)
