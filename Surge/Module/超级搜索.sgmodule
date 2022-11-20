@@ -87,8 +87,9 @@ hostname = %INSERT% duckduckgo.com
 # 淘宝搜索 触发词: tb 淘宝
 ^https:\/\/duckduckgo.com\/\?q=(?:tb|%E6%B7%98%E5%AE%9D)\+([^&]+).+ https://s.m.taobao.com/h5?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:tb|%E6%B7%98%E5%AE%9D).+ https://s.m.taobao.com/h5?q=$1 302
-# 亚马逊购物 
-
+# 亚马逊购物 触发词: az amazon 亚马逊
+^https:\/\/duckduckgo.com\/\?q=(?:az|[Aa]mazon|%E4%BA%9A%E9%A9%AC%E9%80%8A)\+([^&]+).+ https://www.amazon.com/s?k=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:az|[Aa]mazon|%E4%BA%9A%E9%A9%AC%E9%80%8A).+ https://www.amazon.com/s?k=$1 302
 ########## 视频网站
 # YouTube搜索 触发词: yt YouTube
 ^https:\/\/duckduckgo.com\/\?q=(?:yt|[Yy]ou[Tt]ube)\+([^&]+).+ https://www.youtube.com/results?search_query=$1 302
@@ -97,8 +98,8 @@ hostname = %INSERT% duckduckgo.com
 ^https:\/\/duckduckgo.com\/\?q=(?:bi?li|(?:%E5%93%94%E5%93%A9)?%E5%93%94%E5%93%A9)\+([^&]+).+ https://m.bilibili.com/search?keyword=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:bi?li|(?:%E5%93%94%E5%93%A9)?%E5%93%94%E5%93%A9).+ https://m.bilibili.com/search?keyword=$1 302
 # Google 搜索增加"Google Drive" 触发词: gd
-^https:\/\/duckduckgo.com\/\?q=(?:gd)\+([^&]+).+ https://www.google.com/search?q=%22Google+Drive%22+$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gd.+ https://www.google.com/search?q=%22Google+Drive%22+$1
+^https:\/\/duckduckgo.com\/\?q=(?:gd)\+([^&]+).+ https://www.google.com/search?q=%22Google+Drive%22+$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gd.+ https://www.google.com/search?q=%22Google+Drive%22+$1 302
 
 # PornHub 搜索 触发词: ph PornHub
 ^https:\/\/duckduckgo.com\/\?q=(?:ph|[Pp]orn[Hh]ub)\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
