@@ -1,5 +1,5 @@
 #!name=Jsdelivr 复原
-#!desc=将Jsdelivr CDN站点复原为官方raw站点
+#!desc=将 Jsdelivr CDN 站点复原为官方 raw 站点
 
 [MITM]
 hostname = %INSERT% cdn.jsdelivr.net

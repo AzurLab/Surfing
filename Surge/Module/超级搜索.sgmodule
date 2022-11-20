@@ -1,6 +1,6 @@
 #!name=超级搜索
 #!desc=自动切换搜索引擎。改编自墨鱼大佬的 Q-Search，适配 Surge，补充搜索引擎及中文触发词，增加强制谷歌搜索，请更改 Safari 默认搜索为 DuckDuckGo 后使用
-# https://raw.githubusercontent.com/AzurLab/Surfing-Rules/main/Surge/Module/%E8%B6%85%E7%BA%A7%E6%90%9C%E7%B4%A2.sgmodule
+# https://raw.githubusercontent.com/AzurLab/Surfing/main/Surge/Module/%E8%B6%85%E7%BA%A7%E6%90%9C%E7%B4%A2.sgmodule
 # 墨鱼大佬的频道 https://t.me/ddgksf2021
 # 原模块地址 https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/Function/Q-Search.conf
 
