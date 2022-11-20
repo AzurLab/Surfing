@@ -1,112 +1,117 @@
 #!name=超级搜索
-#!desc=自动切换搜索引擎。改编自墨鱼大佬的 Q-Search，适配 Surge，增加部分中文关键词，增加强制谷歌搜索，请先进入设置更改 Safari 默认搜索为 DuckDuckGO
+#!desc=自动切换搜索引擎。改编自墨鱼大佬的 Q-Search，适配 Surge，补充搜索引擎及中文触发词，增加强制谷歌搜索，请更改 Safari 默认搜索为 DuckDuckGo 后使用
 # 墨鱼大佬的频道 https://t.me/ddgksf2021
-# 原模块 https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/Function/Q-Search.conf
+# 原模块地址 https://ocd0522.tk/ddgksf2013/Cuttlefish/raw/branch/master/Rewrite/Function/Q-Search.conf
 
 [MITM]
 hostname = %INSERT% duckduckgo.com
 
 [URL Rewrite]
-# 强制谷歌搜索 关键词: Google 谷歌
+########## 强制谷歌搜索 
+# 谷歌搜索 触发词: Google 谷歌
 ^https:\/\/duckduckgo.com\/\?q=(?:[Gg]oogle|%E8%B0%B7%E6%AD%8C)([^&]+).+ https://www.google.com/search?q=$1 302
-
-# 翻译
-# 有道词典 关键词: yd 有道
+########## 翻译
+# 有道词典 触发词: yd 有道
 ^https:\/\/duckduckgo.com\/\?q=(?:yd|%E6%9C%89%E9%81%93)\+([^&]+).+ http://dict.youdao.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:yd|%E6%9C%89%E9%81%93).+ http://dict.youdao.com/search?q=$1 302
-# Google 翻译为简体中文 关键词: trc 翻译
+# Google 翻译为简体中文 触发词: trc 翻译
 ^https:\/\/duckduckgo.com\/\?q=(?:trc|%E7%BF%BB%E8%AF%91)\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:trc|%E7%BF%BB%E8%AF%91).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1 302
-# Google 翻译为英语 关键词: tre
+# Google 翻译为英语 触发词: tre
 ^https:\/\/duckduckgo.com\/\?q=(?:tre)\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+tre.+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1 302
-# Google 翻译为日语 关键词: trj
+# Google 翻译为日语 触发词: trj
 ^https:\/\/duckduckgo.com\/\?q=(?:trj)\+([^&]+).+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+trj.+ https://translate.google.com/#view=home&op=translate&sl=auto&tl=ja&text=$1 302
+# DeepL 翻译为简体中文 触发词: dl DeepL
+^https:\/\/duckduckgo.com\/\?q=(?:dl|[Dd]eep[Ll])\+([^&]+).+ https://www.deepl.com/translator#../zh/$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:dl|[Dd]eep[Ll]).+ https://www.deepl.com/translator#../zh/$1 302
+# DeepL 翻译为英语 触发词: dle dlen
+^https:\/\/duckduckgo.com\/\?q=(?:dlen?)\+([^&]+).+ https://www.deepl.com/translator#../en/$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:dle).+ https://www.deepl.com/translator#../en/$1 302
 
 
-
-#>>>>>>>>>>>>>>>>>>>>>>>社区
-# 今日头条搜索 关键词: tt 头条
+########## 社区
+# 今日头条搜索 触发词: tt 头条
 ^https:\/\/duckduckgo.com\/\?q=(?:tt|%E5%A4%B4%E6%9D%A1)\+([^&]+).+ https://so.toutiao.com/search?keyword=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:tt|%E5%A4%B4%E6%9D%A1).+ https://so.toutiao.com/search?keyword=$1 302
-# 豆瓣搜索 关键词: db 豆瓣
+# 豆瓣搜索 触发词: db 豆瓣
 ^https:\/\/duckduckgo.com\/\?q=(?:db|%E8%B1%86%E7%93%A3)\+([^&]+).+ https://m.douban.com/search?query=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:db|%E8%B1%86%E7%93%A3).+ https://m.douban.com/search?query=$1 302
-# 知乎搜索 关键词: zh 知乎
+# 知乎搜索 触发词: zh 知乎
 ^https:\/\/duckduckgo.com\/\?q=(?:zh|%E7%9F%A5%E4%B9%8E)\+([^&]+).+ http://www.zhihu.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:zh|%E7%9F%A5%E4%B9%8E).+ http://www.zhihu.com/search?q=$1 302
-# 微博搜索 关键词: wb 微博
+# 微博搜索 触发词: wb 微博
 ^https:\/\/duckduckgo.com\/\?q=(?:wb|%E5%BE%AE%E5%8D%9A)\+([^&]+).+ https://s.weibo.com/weibo/$1
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:wb|%E5%BE%AE%E5%8D%9A).+ https://s.weibo.com/weibo/$1
-# 微信搜索 关键词: wx 微信
+# 搜狗微信搜索 触发词: wx 微信
 ^https:\/\/duckduckgo.com\/\?q=(?:wx|%E5%BE%AE%E4%BF%A1)\+([^&]+).+ https://weixin.sogou.com/weixinwap?query=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:wx|%E5%BE%AE%E4%BF%A1).+ https://weixin.sogou.com/weixinwap?query=$1 302
-# Unsplash搜索 关键词: up Unsplash
+# Unsplash搜索 触发词: up Unsplash
 ^https:\/\/duckduckgo.com\/\?q=(?:up|Unsplash)\+([^&]+).+ https://unsplash.com/s/photos/$1
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:up|Unsplash).+ https://unsplash.com/s/photos/$1
-# 少数派站内搜索 关键词: sspai 少数派
+# 少数派站内搜索 触发词: sspai 少数派
 ^https:\/\/duckduckgo.com\/\?q=(?:sspai|%E5%B0%91%E6%95%B0%E6%B4%BE)\+([^&]+).+ https://sspai.com/search/post/$1
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:sspai|%E5%B0%91%E6%95%B0%E6%B4%BE).+ https://sspai.com/search/post/$1
-# Google 搜索限定少数派站点 关键词: ssp
+# Google 搜索限定少数派站点 触发词: ssp
 ^https:\/\/duckduckgo.com\/\?q=(?:ssp)\+([^&]+).+ https://www.google.com/search?as_q=$1 302&as_sitesearch=sspai.com
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:ssp).+ https://www.google.com/search?as_q=$1 302&as_sitesearch=sspai.com
-# Twitter 搜索 关键词: tw Twitter 推特
+# Twitter 搜索 触发词: tw Twitter 推特
 ^https:\/\/duckduckgo.com\/\?q=(?:tw|[Tt]witter|%E6%8E%A8%E7%89%B9)\+([^&]+).+ https://twitter.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:tw|[Tt]witter|%E6%8E%A8%E7%89%B9).+ https://twitter.com/search?q=$1 302
-# GitHub 搜索 关键词: gh GitHub
+# GitHub 搜索 触发词: gh GitHub
 ^https:\/\/duckduckgo.com\/\?q=(?:gh|[Gg]itHub)\+([^&]+).+ https://github.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:gh|[Gg]itHub).+ https://github.com/search?q=$1 302
-# Stack Overflow 搜索 关键词: so Stack Overflow
+# Stack Overflow 搜索 触发词: so Stack Overflow
 ^https:\/\/duckduckgo.com\/\?q=(?:so|[Ss]tack[Oo]verflow)\+([^&]+).+ https://stackoverflow.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:so|[Ss]tack[Oo]verflow).+ https://stackoverflow.com/search?q=$1 302
-# StackExchange 搜索 关键词: se StackExchange
+# StackExchange 搜索 触发词: se StackExchange
 ^https:\/\/duckduckgo.com\/\?q=(?:se|[Ss]tack[Ee]xchange)\+([^&]+).+ https://stackexchange.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:se|[Ss]tack[Ee]xchange).+ https://stackexchange.com/search?q=$1 302
-# WolframAlpha 搜索 关键词: wa WolframAlpha
+# WolframAlpha 搜索 触发词: wa WolframAlpha
 ^https:\/\/duckduckgo.com\/\?q=(?:wa|[Ww]olfr[Aa]malpha)\+([^&]+).+ https://www.wolframalpha.com/input/?i=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:wa|[Ww]olfr[Aa]malpha).+ https://www.wolframalpha.com/input/?i=$1 302
-# Reddit 搜索 关键词: rd Reddit
+# Reddit 搜索 触发词: rd Reddit
 ^https:\/\/duckduckgo.com\/\?q=(?:rd|[Rr]eddit)\+([^&]+).+ https://www.reddit.com/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:rd|[Rr]eddit).+ https://www.reddit.com/search?q=$1 302
 
 
 
-#>>>>>>>>>>>>>>>>>>>>>>>购物
-# 什么值得买搜索 关键词: zdm 值得买 什么值得买
+########## 购物
+# 什么值得买搜索 触发词: zdm 值得买 什么值得买
 ^https:\/\/duckduckgo.com\/\?q=(?:zdm|(?:%E4%BB%80%E4%B9%88)?%E5%80%BC%E5%BE%97%E4%B9%B0)\+([^&]+).+ https://search.m.smzdm.com/?v=b&s=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:zdm|(?:%E4%BB%80%E4%B9%88)?%E5%80%BC%E5%BE%97%E4%B9%B0).+ https://search.m.smzdm.com/?v=b&s=$1 302
-# 京东搜索 关键词: jd 京东
+# 京东搜索 触发词: jd 京东
 ^https:\/\/duckduckgo.com\/\?q=(?:jd|%E4%BA%AC%E4%B8%9C)\+([^&]+).+ https://so.m.jd.com/ware/search.action?keyword=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:jd|%E4%BA%AC%E4%B8%9C).+ https://so.m.jd.com/ware/search.action?keyword=$1 302
-# 淘宝搜索 关键词: tb 淘宝
+# 淘宝搜索 触发词: tb 淘宝
 ^https:\/\/duckduckgo.com\/\?q=(?:tb|%E6%B7%98%E5%AE%9D)\+([^&]+).+ https://s.m.taobao.com/h5?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:tb|%E6%B7%98%E5%AE%9D).+ https://s.m.taobao.com/h5?q=$1 302
+# 亚马逊购物 
 
-
-#>>>>>>>>>>>>>>>>>>>>>>>视频
-# YouTube搜索 关键词: yt YouTube
+########## 视频网站
+# YouTube搜索 触发词: yt YouTube
 ^https:\/\/duckduckgo.com\/\?q=(?:yt|[Yy]ou[Tt]ube)\+([^&]+).+ https://www.youtube.com/results?search_query=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:yt|[Yy]ou[Tt]ube).+ https://www.youtube.com/results?search_query=$1 302
-# 哔哩哔哩搜索 关键词: bli bili 哔哩 哔哩哔哩
+# 哔哩哔哩搜索 触发词: bli bili 哔哩 哔哩哔哩
 ^https:\/\/duckduckgo.com\/\?q=(?:bi?li|(?:%E5%93%94%E5%93%A9)?%E5%93%94%E5%93%A9)\+([^&]+).+ https://m.bilibili.com/search?keyword=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:bi?li|(?:%E5%93%94%E5%93%A9)?%E5%93%94%E5%93%A9).+ https://m.bilibili.com/search?keyword=$1 302
-# Google 搜索增加"Google Drive" 关键词: gd
+# Google 搜索增加"Google Drive" 触发词: gd
 ^https:\/\/duckduckgo.com\/\?q=(?:gd)\+([^&]+).+ https://www.google.com/search?q=%22Google+Drive%22+$1
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+gd.+ https://www.google.com/search?q=%22Google+Drive%22+$1
 
-# PornHub 搜索 关键词: ph PornHub
+# PornHub 搜索 触发词: ph PornHub
 ^https:\/\/duckduckgo.com\/\?q=(?:ph|[Pp]orn[Hh]ub)\+([^&]+).+ https://cn.pornhub.com/video/search?search=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:ph|[Pp]orn[Hh]ub).+ https://cn.pornhub.com/video/search?search=$1 302
-# Acfun 搜索 关键词: af Acfun
+# Acfun 搜索 触发词: af Acfun
 ^https:\/\/duckduckgo.com\/\?q=(?:af|[Aa]cfun)\+([^&]+).+ https://www.acfun.cn/search?keyword=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:af|[Aa]cfun).+ https://www.acfun.cn/search?keyword=$1 302
-# 茶杯狐搜索 关键词: ys 茶杯狐 cupfox
+# 茶杯狐搜索 触发词: ys 茶杯狐 cupfox
 ^https:\/\/duckduckgo.com\/\?q=(?:ys|[Cc]upfox|%E8%8C%B6%E6%9D%AF%E7%8B%90)\+([^&]+).+ https://cupfox.app/search?key=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:ys|[Cc]upfox|%E8%8C%B6%E6%9D%AF%E7%8B%90).+ https://cupfox.app/search?key=$1 302
 
 
-#>>>>>>>>>>>>>>>>>>>>>>>苹果商店切换 默认关闭
+########## 苹果商店切换 (默认关闭)
 #源链接爬虫于>>https://www.liangjianghu.com/searchads-appstore-switch
 #Created by ddgksf2013，使用方法: 输入区号，搜索即可
 # cn  (切换至中国区)
@@ -127,35 +132,50 @@ hostname = %INSERT% duckduckgo.com
 # ^https:\/\/duckduckgo.com\/\?q=sg&.+ https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc= 302
 
 
-# 花式工具
-# 生成二维码 关键词: qr qrcode 二维码
+########## 花式工具
+# 生成二维码 触发词: qr qrcode 二维码 (中文和空格会被 urlencode)
 ^https:\/\/duckduckgo.com\/\?q=(?:qr|qrcode|%E4%BA%8C%E7%BB%B4%E7%A0%81)\+([^&]+).+ https://qrcode.show/$1 302
-^https:\/\/duckduckgo.com\/\?q=((.(?!bd))+)\+(?:qr|qrcode|%E4%BA%8C%E7%BB%B4%E7%A0%81).+ https://qrcode.show/$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:qr|qrcode|%E4%BA%8C%E7%BB%B4%E7%A0%81).+ https://qrcode.show/$1 302
 
-# site (谷歌搜索指定站点)
+########## site (谷歌搜索指定站点)
 
 
-#>>>>>>>>>>>>>>>>>>>>>>>搜索
-# 百度搜索 关键词: bd 百度
+########## 搜索
+# 百度搜索 触发词: bd 百度
 ^https:\/\/duckduckgo.com\/\?q=(?:bd|%E7%99%BE%E5%BA%A6)\+([^&]+).+ https://www.baidu.com/s?wd=$1 302
 ^https:\/\/duckduckgo.com\/\?q=((.(?!bd))+)\+(?:bd|%E7%99%BE%E5%BA%A6).+ https://www.baidu.com/s?wd=$1 302
-# 维基搜索 关键词: wk 维基
-^https:\/\/duckduckgo.com\/\?q=(?:wk|%E7%BB%B4%E5%9F%BA)\+([^&]+).+ https://zh.wikipedia.org/wiki/$1
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:wk|%E7%BB%B4%E5%9F%BA).+ https://zh.wikipedia.org/wiki/$1
-# 无追搜索 关键词: wz 无追
+# 必应搜索 触发词: bi bing 必应
+^https:\/\/duckduckgo.com\/\?q=(?:bi|[Bb]ing|%E5%BF%85%E5%BA%94)\+([^&]+).+ https://cn.bing.com/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:bi|[Bb]ing|%E5%BF%85%E5%BA%94).+ https://cn.bing.com/search?q=$1 302
+# 搜狗搜索  触发词: sg sogou sougou 搜狗
+^https:\/\/duckduckgo.com\/\?q=(?:sg|sou?gou|%E6%90%9C%E7%8B%97)\+([^&]+).+ https://wap.sogou.com/web/searchList.jsp?keyword=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:sg|sou?gou|%E6%90%9C%E7%8B%97).+ https://wap.sogou.com/web/searchList.jsp?keyword=$1 302
+# 360 搜索 触发词: 360
+^https:\/\/duckduckgo.com\/\?q=(?:360)\+([^&]+).+ https://m.so.com/s?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:360).+ https://m.so.com/s?q=$1 302
+# 雅虎搜索 触发词: yahoo 雅虎
+^https:\/\/duckduckgo.com\/\?q=(?:[Yy]ahoo|%E9%9B%85%E8%99%8E)\+([^&]+).+ https://search.yahoo.com/search?p=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:[Yy]ahoo|%E9%9B%85%E8%99%8E).+ https://search.yahoo.com/search?p=$1 302
+# 维基搜索 触发词: wk 维基
+^https:\/\/duckduckgo.com\/\?q=(?:wk|%E7%BB%B4%E5%9F%BA)\+([^&]+).+ https://zh.wikipedia.org/wiki/$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:wk|%E7%BB%B4%E5%9F%BA).+ https://zh.wikipedia.org/wiki/$1 302
+# 无追搜索 触发词: wz 无追
 ^https:\/\/duckduckgo.com\/\?q=(?:wz|%E6%97%A0%E8%BF%BD)\+([^&]+).+ https://www.wuzhuiso.com/s?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:wz|%E6%97%A0%E8%BF%BD).+ https://www.wuzhuiso.com/s?q=$1 302
-# 油猴搜索 关键词: yh 油猴搜索
+# GreasyFork 油猴搜索 触发词: yh 油猴
 ^https:\/\/duckduckgo.com\/\?q=(?:yh|%E6%B2%B9%E7%8C%B4)\+([^&]+).+ https://greasyfork.org/zh-CN/scripts?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:yh|%E6%B2%B9%E7%8C%B4).+ https://greasyfork.org/zh-CN/scripts?q=$1 302 
-# Google 图片搜索 关键词: gi 图片
+# Google 图片搜索 触发词: gi 图片
 ^https:\/\/duckduckgo.com\/\?q=(?:gi|%E5%9B%BE%E7%89%87)\+([^&]+).+ https://www.google.com/search?&tbm=isch&q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:gi|%E5%9B%BE%E7%89%87).+ https://www.google.com/search?&tbm=isch&q=$1 302
-# 必应搜索 关键词: bi bing 必应
-^https:\/\/duckduckgo.com\/\?q=(?:bi|bing|%E5%BF%85%E5%BA%94)\+([^&]+).+ https://cn.bing.com/search?q=$1 302
-^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:bi|bing|%E5%BF%85%E5%BA%94).+ https://cn.bing.com/search?q=$1 302
-# 苹果应用搜索 关键词: ios 应用
+# 苹果应用搜索 触发词: ios 应用
 ^https:\/\/duckduckgo.com\/\?q=(?:ios|%E5%BA%94%E7%94%A8)\+([^&]+).+ https://www.qimai.cn/search/index/search/$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:ios|%E5%BA%94%E7%94%A8).+ https://www.qimai.cn/search/index/search/$1 302
-# 默认 默认替换为 Google 搜索
+# Ecosia 搜索 触发词: es ecosia
+^https:\/\/duckduckgo.com\/\?q=(?:es|[Ee]cosia)\+([^&]+).+ https://www.ecosia.org/search?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:es|[Ee]cosia).+ https://www.ecosia.org/search?q=$1 302
+# DuckDuckGo 搜索 触发词: ddg duck duckduckgo
+^https:\/\/duckduckgo.com\/\?q=(?:ddg|duck|[Dd]uck[Dd]uck[Gg]o)\+([^&]+).+ https://duckduckgo.com/?q=$1 302
+^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?:ddg|duck|[Dd]uck[Dd]uck[Gg]o).+ https://duckduckgo.com/?q=$1 302
+# 默认替换 (默认替换为 Google 搜索)
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+ https://www.google.com/search?q=$1 302
