@@ -12,7 +12,7 @@ hostname = %INSERT% duckduckgo.com
 # 谷歌搜索 触发词: Google 谷歌
 ^https:\/\/duckduckgo.com\/\?q=(?i:Google|%E8%B0%B7%E6%AD%8C)([^&]+).+ https://www.google.com/search?q=$1 302
 # 访问 ncr 阻止谷歌地区跳转 触发词: ncr (只输入ncr)
-^https:\/\/duckduckgo.com\/\?q=(?i:ncr)$ https://www.google.com/ncr 302
+^https:\/\/duckduckgo.com\/\?q=(?i:ncr)&.+ https://www.google.com/ncr 302
 
 ########## 翻译
 # 有道词典 触发词: yd 有道
@@ -206,8 +206,8 @@ hostname = %INSERT% duckduckgo.com
 ^https:\/\/duckduckgo.com\/\?q=(?i:es|Ecosia)\+([^&]+).+ https://www.ecosia.org/search?q=$1 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?i:es|Ecosia).+ https://www.ecosia.org/search?q=$1 302
 # 
-# DuckDuckGo 搜索 触发词: ddg duck duckduckgo
+# DuckDuckGo 搜索 触发词: ddg duck duckduckgo (添加`&dk=dk`参数)
 ^https:\/\/duckduckgo.com\/\?q=(?i:ddg|duck|DuckDuckGo)\+([^&]+).+ https://duckduckgo.com/?q=$1&dk=dk 302
 ^https:\/\/duckduckgo.com\/\?q=([^+]+)\+(?i:ddg|duck|DuckDuckGo).+ https://duckduckgo.com/?q=$1&dk=dk 302
-# 默认替换 (默认替换为 Google 搜索)
+# 默认替换 (默认替换为 Google 搜索 `&dk=dk`参数除外)
 ^https:\/\/duckduckgo.com\/\?q=([^&]+).+(?<!&dk=dk)$ https://www.google.com/search?q=$1 302
