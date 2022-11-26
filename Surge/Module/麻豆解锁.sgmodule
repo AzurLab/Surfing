@@ -1,0 +1,13 @@
+#!name=麻豆解锁
+#!desc=解锁麻豆社区全部视频，原作者 Hausd0rff
+#!system=ios
+# 软件版本：1.0.6+34
+# 下载地址：https://shrtm.nu/mdsq
+# 脚本作者：Hausd0rff
+# 脚本发布：https://t.me/yqc_123
+# 问题反馈：https://t.me/yqc_777
+[Script]
+麻豆解锁 = type=http-request,pattern=^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8,requires-body=0,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/mdsqallcrack.js,script-update-interval=0
+
+[MITM]
+hostname = %APPEND% ypmnkbb.saejeuj.com, fufxtyc.bytebwq.com, lcbnejx.dirptev.com, gcyivjc.qrneryt.com
