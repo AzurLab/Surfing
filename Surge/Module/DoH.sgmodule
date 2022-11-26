@@ -2,5 +2,6 @@
 #!desc=DNS over HTTPS
 
 [General]
-encrypted-dns-server = https://120.53.53.53/dns-query, https://185.222.222.222/dns-query
+encrypted-dns-server = https://1.12.12.12/dns-query, https://120.53.53.53/dns-query, https://185.222.222.222/dns-query
+
 #备选DNS https://223.5.5.5/dns-query, https://1.12.12.12/dns-query
