@@ -13,7 +13,7 @@ hostname = %INSERT% duckduckgo.com
 # 请先将 Safari 默认搜索更改为 DuckDuckGo
 ########## 强制谷歌搜索 
 # 谷歌搜索 触发词: Google 谷歌
-^https:\/\/duckduckgo\.com\/\?q=(?i:Google|%E8%B0%B7%E6%AD%8C)([^&]+)&.+ https://www.google.com/search?q=$1 302
+^https:\/\/duckduckgo\.com\/\?q=(?i:Google|%E8%B0%B7%E6%AD%8C)\+([^&]+)&.+ https://www.google.com/search?q=$1 302
 # 访问 ncr 阻止谷歌地区跳转 触发词: ncr
 ^https:\/\/duckduckgo\.com\/\?q=(?i:ncr)&.+ https://www.google.com/ncr 302
 
