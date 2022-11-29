@@ -1,6 +1,9 @@
-# Surfing Rules 你也网上冲浪啊
+# Surfing 你也网上冲浪啊
 
 [![Telegram](https://img.shields.io/badge/discuss-Telegram-2EA9DF?style=flat-square)](https://t.me/blowH2O)
+
+## Count
+![](http://profile-counter.glitch.me/AzurLab/count.svg)
 
 ## Thanks
 
