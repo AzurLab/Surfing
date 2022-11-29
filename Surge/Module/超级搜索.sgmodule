@@ -70,6 +70,7 @@ hostname = %INSERT% duckduckgo.com
 ^https:\/\/duckduckgo\.com\/\?q=(?i:Tumblr|%E6%B1%A4(?:%E4%B8%8D%E7%83%AD)?)\+([^&]+)&.+ https://www.tumblr.com/search/$1 302
 ^https:\/\/duckduckgo\.com\/\?q=(.+)\+(?i:Tumblr|%E6%B1%A4(?:%E4%B8%8D%E7%83%AD)?)&.+ https://www.tumblr.com/search/$1 302
 # GitHub 搜索 触发词: gh GitHub
+^https:\/\/duckduckgo\.com\/\?q=(?i:gh|GitHub)\+https%3A%2F%2Fraw\.githubusercontent\.com%2F(.+?)%2F(.+?)%2F(.+?)%2F([^&]+)&.+ https://github.com/$1/$2/blob/$3/$4 302
 ^https:\/\/duckduckgo\.com\/\?q=(?i:gh|GitHub)\+([^&]+)&.+ https://github.com/search?q=$1 302
 ^https:\/\/duckduckgo\.com\/\?q=(.+)\+(?i:gh|GitHub)&.+ https://github.com/search?q=$1 302
 # Gitee 搜索 触发词: Gitee
