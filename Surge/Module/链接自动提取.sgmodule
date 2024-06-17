@@ -1,0 +1,7 @@
+#!name=链接自动提取
+#!desc=链接自动提取
+#!system=ios
+[MITM]
+hostname = %APPEND% duckduckgo.com
+[Script]
+链接自动提取 = type=http-request,pattern="^https:\/\/duckduckgo\.com\/\?q=.*(https?%3A%2F%2F[A-Za-z0-9_\-.:?&@=\/%#,;]*?)",requires-body=0,script-path=https://raw.githubusercontent.com/AzurLab/Surfing/main/Surge/Scripts/%E9%93%BE%E6%8E%A5%E8%87%AA%E5%8A%A8%E6%8F%90%E5%8F%96.js
