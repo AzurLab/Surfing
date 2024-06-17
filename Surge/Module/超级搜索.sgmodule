@@ -214,6 +214,6 @@ hostname = %INSERT% duckduckgo.com
 ^https:\/\/duckduckgo\.com\/\?q=(?i:ddg|duck|DuckDuckGo)\+([^&]+)&.+ https://duckduckgo.com/?q=$1 302
 ^https:\/\/duckduckgo\.com\/\?q=(.+)\+(?i:ddg|duck|DuckDuckGo)&.+ https://duckduckgo.com/?q=$1 302
 # 兼容链接提取
-^https:\/\/duckduckgo\.com\/\?q=.*(https?%3A%2F%2F[A-Za-z0-9_\-\+.:?&@=\/%#,;]*?)&.+ https://duckduckgo.com/?q=$1 302
+^https:\/\/duckduckgo\.com\/\?q=.*?(https?%3A%2F%2F[A-Za-z0-9_\-\+.:?&@=\/%#,;]*.*)&.+ https://duckduckgo.com/?q=$1 302
 # 默认替换 (默认替换为 Google 搜索)
 ^https:\/\/duckduckgo\.com\/\?q=([^&]+)&(?!.*norw=1).+ https://www.google.com/search?q=$1 302
