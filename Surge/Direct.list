@@ -9,6 +9,8 @@ IP-CIDR,1.201.0.0/16
 DOMAIN-SUFFIX,xiaomi.com
 DOMAIN-SUFFIX,miui.com
 DOMAIN-SUFFIX,mi.com
+DOMAIN-SUFFIX,xiaomi.net
+DOMAIN-SUFFIX,mijia.tech
 
 # > Microsoft Authenticator
 DOMAIN-SUFFIX,activity.windows.com
