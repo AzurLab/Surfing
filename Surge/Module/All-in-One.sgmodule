@@ -710,7 +710,7 @@ https://ccsp-egmas.sf-express.com/cx-app-base/base/app/ad/queryAdImages data-typ
 ^https?:\/\/zconfig\.alibabausercontent\.com\/zconfig data-type=text data=" " status-code=200
 
 # > TengXunShouJiGuanJia
-# ^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* data-type=text data=" " status-code=200
+^https://otheve.beacon.qq.com\/analytics\/upload\?sid=.* data-type=text data=" " status-code=200
 
 # > TuNiu
 ^https?:\/\/m\.tuniu\.com\/api\/operation\/splash\/ data-type=text data=" " status-code=200
@@ -1030,7 +1030,7 @@ https?:\/\/m\.sd\.10086\.cn\/zapi\/app_common\/homeWelcome\/welcome.do data-type
 ^https?:\/\/zjdr666\.com\/zjdr\.php\/v\d\/(version|top_notice\?|advert\?position=[^2]+) data-type=text data=" " status-code=200
 
 # > zhangshangyingxionglianmeng
-^https?:\/\/mlol\.qt\.qq\.com\/go\/recommend data-type=text data=" " status-code=200
+# ^https?:\/\/mlol\.qt\.qq\.com\/go\/recommend data-type=text data=" " status-code=200
 
 # > zhongguoyidongguangdong
 ^https?:\/\/gd\.10086\.cn\/gmccapp\/serv\/\?servicename=GMCCAPP_704_002_001_001 data-type=text data=" " status-code=200
